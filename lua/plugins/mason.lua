@@ -1,33 +1,7 @@
 return {
 	{
-		"neovim/nvim-lspconfig",
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
-	{
-		"nvim-treesitter/nvim-treesitter-textobjects",
-	},
-	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
-	{
-		"ms-jpq/coq_nvim",
-		dependencies = {
-			"ms-jpq/coq.artifacts",
-		},
-		init = function()
-			vim.g.coq_settings = {
-				auto_start = true,
-			}
-		end,
-	},
-	{
 		"williamboman/mason.nvim",
+		config = true
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
