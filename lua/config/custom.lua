@@ -1,6 +1,7 @@
 -- mappings
 vim.g.mapleader = "\\"
 vim.wo.number = true
+vim.wo.relativenumber = true
 vim.wo.colorcolumn = "80,120"
 
 local wk = require("which-key")
